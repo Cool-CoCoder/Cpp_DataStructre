@@ -15,7 +15,7 @@ void get_next(KString *t, int next[]) {
             j++, i++;
             next[i] = j;
         } else {
-            j = next[j];
+            j = next[j]; // 类似于一种递归，在j处匹配失败则跳转到next[j]
         }
     }
 }
